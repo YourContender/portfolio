@@ -1,10 +1,10 @@
 import react from "../../img/preview/react-svgrepo-com.svg";
 
-const SkillItem = () => {
+const SkillItem = ({ item }) => {
 	return (
 		<div className="skills-item">
-			<img src={react} alt="react" />
-			<span className="skills-item-name">React</span>
+			<img src={item.img} alt="react" />
+			<span className="skills-item-name">{item.name}</span>
 			{/* <p className="skills-item-descr">
                 React is a JavaScript library for building interactive user
                 interfaces and web applications quickly and efficiently with

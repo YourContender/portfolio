@@ -7,9 +7,9 @@ const Skills = () => {
 		<div className="skills">
 			<div className="skills-container">
 				<div className="skills-list">
-					{/* {data.map((item) => (
-						// <SkillItem item={item} />
-					))} */}
+					{data.map((item) => (
+						<SkillItem item={item} />
+					))}
 				</div>
 			</div>
 		</div>
