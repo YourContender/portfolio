@@ -5,13 +5,13 @@ export const data = [
 		name: "HTML",
 		descr:
 			"The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser.",
-		img: "https://www.patterns.dev/img/reactjs/react-logo@3x.svg",
+		img: "",
 	},
 	{
 		name: "CSS",
 		descr:
 			"Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language.",
-		img: "https://raw.githubusercontent.com/YourContender/portfolio/3d0288761c3c63578897f40d14e0c56c80d0d6d9/src/img/preview/github-color-svgrepo-com.svg",
+		img: "",
 	},
 	{
 		name: "JavaScript",
@@ -42,5 +42,17 @@ export const data = [
 		descr:
 			"Material-UI is an open-source user interface framework for React.js, a popular JavaScript library for building user interfaces.",
 		img: "https://raw.githubusercontent.com/YourContender/portfolio/3d0288761c3c63578897f40d14e0c56c80d0d6d9/src/img/preview/material-ui-svgrepo-com.svg",
+	},
+	{
+		name: "Github",
+		descr:
+			"Material-UI is an open-source user interface framework for React.js, a popular JavaScript library for building user interfaces.",
+		img: "https://raw.githubusercontent.com/YourContender/portfolio/b66548bcd26f2f4f79047bc71c5cad07e7ff5d21/src/img/preview/github-color-svgrepo-com.svg",
+	},
+	{
+		name: "Sass",
+		descr:
+			"Material-UI is an open-source user interface framework for React.js, a popular JavaScript library for building user interfaces.",
+		img: "https://raw.githubusercontent.com/YourContender/portfolio/b66548bcd26f2f4f79047bc71c5cad07e7ff5d21/src/img/preview/sass-svgrepo-com.svg",
 	},
 ];
