@@ -1,13 +1,15 @@
 .skills {
-    // width: 100vw;
     background-color: #383737;
     padding: 40px 0;
     display: flex;
     justify-content: center;
     &-container {
         width: 1200px;
+        text-align: center;
     }
-    &-item {
+    &-wrapper {
+        position: relative;
+        font-family: 'Rajdhani', sans-serif;
         width: 250px;
         height: 270px;
         padding: 20px;
@@ -20,22 +22,83 @@
         box-shadow: 0 2px 15px #2c2a2a;
         border-radius: 15px;
         margin: 20px;
+        cursor: pointer;
+        transition: 1s ease;
+        perspective: 1000px;
+        &:hover {
+            background-color: #585555;
+            transform: translateY(-10%);
+        }
         img {
             width: 140px;
         }
         &-name {
-            font-size: 42px;
+            font-size: 36px;
             margin: 20px 10px 10px 10px;
-            color: rgb(174, 223, 252);
+            color: rgb(131, 132, 133);
         }
         &-descr {
             font-size: 18px;
             letter-spacing: 1px;
         }
+        &-front, &-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: 1.5s;
+            backface-visibility: hidden;
+        }
+        &-back {
+            transform: rotateY(180deg);
+            p {
+                padding: 0 10px 0 10px;
+            }
+        }
+        &-front {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        &:hover .skills-wrapper-front {
+            transform: rotateY(180deg);
+        }
+        &:hover .skills-wrapper-back {
+            transform: rotateY(360deg);
+        }
     }
     &-list {
         display: flex;
+        justify-content: center;
         flex-wrap: wrap;
         
+    }
+    &-title {
+        font-family: 'Rajdhani', sans-serif;
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 36px;
+        margin-bottom: 15px;
+    }
+    &-btn {
+        display: block;
+        margin: 0 auto;
+        background-color: #E2A200;
+        padding: 10px 20px 10px 20px;
+        margin-top: 40px;
+        border-radius: 8px;
+        color: #000;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 18px;
+        border: none;
+        outline: none;
+        box-shadow: 0 2px 15px #E2A200;
+        cursor: pointer;
     }
 }
