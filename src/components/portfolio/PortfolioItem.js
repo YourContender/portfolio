@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import prod1 from "../../img/app1.png";
 
-const PortfolioItem = () => {
+const PortfolioItem = ({ item }) => {
 	const cardAnimation = {
 		hidden: {
 			y: 100,
@@ -22,19 +22,24 @@ const PortfolioItem = () => {
 			custom={1}
 			variants={cardAnimation}
 		>
-			<img src={prod1} alt="" />
+			<img src={item.img} alt="" />
 			<div className="portfolio-item-text">
-				<h2 className="portfolio-item-text-h">Title project</h2>
-				<p className="portfolio-item-text-span">
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, odit
-					iste? Quasi enim optio quod delectus officiis aspernatur quas ab.
-				</p>
+				<h2 className="portfolio-item-text-h">{item.h2}</h2>
+				<p className="portfolio-item-text-span">{item.descr}</p>
 
 				<div className="portfolio-item-text-links">
-					<a className="portfolio-item-text-link" href="#">
+					<a
+						className="portfolio-item-text-link"
+						href={item.website}
+						target="_blank"
+					>
 						Website
 					</a>
-					<a className="portfolio-item-text-link" href="#">
+					<a
+						className="portfolio-item-text-link"
+						href={item.repo}
+						target="_blank"
+					>
 						Repository
 					</a>
 				</div>

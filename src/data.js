@@ -58,3 +58,30 @@ export const data = [
 		img: "https://raw.githubusercontent.com/YourContender/portfolio/b66548bcd26f2f4f79047bc71c5cad07e7ff5d21/src/img/preview/sass-svgrepo-com.svg",
 	},
 ];
+
+export const cards = [
+	{
+		img: "https://github.com/YourContender/portfolio/blob/main/src/img/cars.png?raw=true",
+		h2: "Lease cars",
+		descr:
+			"multi-page car rental website, implemented using JavaScript, HTML, CSS, To create the slider I used the library 'swiper'",
+		website: "https://lease-cars-prod.vercel.app/index.html",
+		repo: "https://github.com/YourContender/lease-cars",
+	},
+	{
+		img: "https://github.com/YourContender/portfolio/blob/main/src/img/miami.png?raw=true",
+		h2: "Miami slider",
+		descr:
+			"beautiful design, parallax effect, well-chosen colors, added basic animation",
+		website: "https://miami-app.vercel.app/",
+		repo: "https://github.com/YourContender/miami-layout",
+	},
+	{
+		img: "https://github.com/YourContender/portfolio/blob/main/src/img/app1.png?raw=true",
+		h2: "Subaru",
+		descr:
+			"First use of the gsap library. I tested its free capabilities and connection methods.",
+		website: "https://subaru-animation-app.vercel.app/",
+		repo: "https://github.com/YourContender/subaru-animation-app",
+	},
+];

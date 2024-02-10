@@ -1,13 +1,15 @@
+import { useState } from "react";
 import "./Portfolio.scss";
 import PortfolioItem from "./PortfolioItem";
+import { cards } from "../../data";
 
 const Portfolio = () => {
 	return (
 		<div className="portfolio">
 			<div className="portfolio-list">
-				<PortfolioItem />
-				<PortfolioItem />
-				<PortfolioItem />
+				{cards.map((item, index) => {
+					return <PortfolioItem item={item} key={index} />;
+				})}
 			</div>
 		</div>
 	);
