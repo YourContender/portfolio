@@ -1,0 +1,85 @@
+.portfolio {
+    width: 100%;
+    background-color: #1b1b1b;
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+    &-list {
+        max-width: 1650px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    &-item {
+        width: 500px;
+        height: 530px;
+        padding: 30px 10px 20px 10px;
+        background-color: #333232;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        margin: 25px;
+        box-shadow: 0 2px 15px #424242;
+        transition: 1s ease;
+        perspective: 1000px;
+        &:hover {
+            background-color: #4b4747;
+            transform: translateY(-5%);
+            box-shadow: 0 2px 15px rgb(130, 130, 255);
+        }
+        img {
+            width: 450px;
+            border-radius: 10px;
+        }
+        &-text {
+            width: 500px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-family: 'Rajdhani', sans-serif;
+            &-h {
+                font-weight: 700;
+                font-size: 32px;
+                text-transform: uppercase;
+                color: #fff;
+                padding: 10px 40px;
+                border-bottom: 1px solid #E2A200;
+                letter-spacing: 1px;
+            }
+            &-span {
+                font-weight: 400;
+                color: #aaa4a4;
+                font-size: 22px;
+                padding: 0 20px;
+                letter-spacing: 1px;
+                margin-top: 15px;
+                overflow: hidden;
+                text-overflow: ellipsis; 
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 4;
+            }
+            &-links {
+                display: flex;
+            }
+            &-link {
+                color: #E2A200;
+                display: block;
+                font-size: 22px;
+                margin: 20px 20px 20px 20px;
+                text-decoration: none;
+                letter-spacing: 1px;
+                &:hover {
+                    font-weight: 700;
+                    border-bottom: 1px solid #E2A200;
+                }
+            }
+        }
+        
+    }
+}

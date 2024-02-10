@@ -6,46 +6,103 @@ import js from "../../img/preview/js-svgrepo-com.svg";
 import mui from "../../img/preview/material-ui-svgrepo-com.svg";
 import ts from "../../img/preview/typescript-svgrepo-com.svg";
 import git from "../../img/preview/github-color-svgrepo-com.svg";
+import { motion } from "framer-motion";
 import "./Preview.scss";
 
 const Preview = () => {
+	const textAnimation = {
+		hidden: {
+			x: -300,
+			opacity: 0,
+		},
+		visible: (custom) => ({
+			x: 0,
+			opacity: 1,
+			transition: { delay: custom * 0.2 },
+		}),
+	};
+
+	const skillsAnimation = {
+		hidden: {
+			y: -100,
+			opacity: 0,
+		},
+		visible: (custom) => ({
+			y: 0,
+			opacity: 1,
+			transition: { delay: custom * 0.2 },
+		}),
+	};
+
 	return (
-		<div className="preview">
+		<motion.div className="preview" initial="hidden" whileInView="visible">
 			<div className="preview-container">
-				<div className="preview-left">
+				<motion.div
+					custom={2}
+					variants={textAnimation}
+					className="preview-left"
+				>
 					<span className="preview-left-text">Hello</span>
 					<h1 className="preview-left-name">I`m Sergey Sayenko</h1>
 					<span className="preview-left-descr">
 						react frontend developer from Kryvyi Rih.
 					</span>
 					<button className="preview-left-btn">Contact me</button>
-				</div>
+				</motion.div>
 				<div className="preview-right">
 					<img src={me} alt="" className="preview-me" />
-					<div className="preview-skills react">
+					<motion.div
+						custom={1}
+						variants={skillsAnimation}
+						className="preview-skills react"
+					>
 						<img src={react} alt="react" />
-					</div>
-					<div className="preview-skills redux">
+					</motion.div>
+					<motion.div
+						custom={2}
+						variants={skillsAnimation}
+						className="preview-skills redux"
+					>
 						<img src={redux} alt="react" />
-					</div>
-					<div className="preview-skills sass">
+					</motion.div>
+					<motion.div
+						custom={3}
+						variants={skillsAnimation}
+						className="preview-skills sass"
+					>
 						<img src={sass} alt="react" />
-					</div>
-					<div className="preview-skills js">
+					</motion.div>
+					<motion.div
+						custom={4}
+						variants={skillsAnimation}
+						className="preview-skills js"
+					>
 						<img src={js} alt="react" />
-					</div>
-					<div className="preview-skills mui">
+					</motion.div>
+					<motion.div
+						custom={5}
+						variants={skillsAnimation}
+						className="preview-skills mui"
+					>
 						<img src={mui} alt="react" />
-					</div>
-					<div className="preview-skills git">
+					</motion.div>
+					<motion.div
+						custom={6}
+						variants={skillsAnimation}
+						className="preview-skills git"
+					>
 						<img src={git} alt="react" />
-					</div>
-					<div className="preview-skills ts">
+					</motion.div>
+					<motion.div
+						custom={7}
+						variants={skillsAnimation}
+						className="preview-skills ts"
+					>
 						<img src={ts} alt="react" />
-					</div>
+					</motion.div>
 				</div>
 			</div>
-		</div>
+		</motion.div>
 	);
 };
 

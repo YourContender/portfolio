@@ -2,28 +2,74 @@ import me1 from "../../img/me1.jpg";
 import me2 from "../../img/me2.jpg";
 import me3 from "../../img/me3.jpg";
 import Slider from "../slider/Slider";
+import { motion } from "framer-motion";
 import "./About.scss";
+
+const photoAnimation = {
+	hidden: {
+		y: -100,
+		opacity: 0,
+	},
+	visible: (custom) => ({
+		y: 0,
+		opacity: 1,
+		transition: { delay: custom * 0.4 },
+	}),
+};
+
+const textAnimation = {
+	hidden: {
+		y: -500,
+		opacity: 0,
+	},
+	visible: (custom) => ({
+		y: 0,
+		opacity: 1,
+		transition: { delay: custom * 0.5 },
+	}),
+};
 
 const About = () => {
 	return (
-		<div className="about" id="about">
+		<motion.div
+			initial="hidden"
+			whileInView="visible"
+			className="about"
+			id="about"
+		>
 			<div className="about-container">
 				<div className="about-block">
 					<div className="about-block-left">
-						<div className="about-block-wrapper first">
+						<motion.div
+							custom={1}
+							variants={photoAnimation}
+							className="about-block-wrapper first"
+						>
 							<img className="about-block-img" src={me1} alt="" />
-						</div>
-						<div className="about-block-wrapper second">
+						</motion.div>
+						<motion.div
+							custom={2}
+							variants={photoAnimation}
+							className="about-block-wrapper second"
+						>
 							<img className="about-block-img" src={me2} alt="" />
-						</div>
-						<div className="about-block-wrapper reserve">
+						</motion.div>
+						<motion.div
+							custom={3}
+							variants={photoAnimation}
+							className="about-block-wrapper reserve"
+						>
 							<img className="about-block-img" src={me3} alt="" />
-						</div>
+						</motion.div>
 						<div className="slider">
 							<Slider />
 						</div>
 					</div>
-					<div className="about-block-middle">
+					<motion.div
+						variants={textAnimation}
+						custom={2}
+						className="about-block-middle"
+					>
 						<h2 className="about-block-middle-h2">About me</h2>
 						<span className="about-block-middle-span">
 							Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem
@@ -35,15 +81,19 @@ const About = () => {
 							porro commodi eaque fugiat exercitationem repudiandae enim,
 							voluptatum, possimus, dicta quas? Ipsum, nam!
 						</span>
-					</div>
+					</motion.div>
 					<div className="about-block-right">
-						<div className="about-block-wrapper third">
+						<motion.div
+							custom={3}
+							variants={photoAnimation}
+							className="about-block-wrapper third"
+						>
 							<img className="about-block-img" src={me3} alt="" />
-						</div>
+						</motion.div>
 					</div>
 				</div>
 			</div>
-		</div>
+		</motion.div>
 	);
 };
 

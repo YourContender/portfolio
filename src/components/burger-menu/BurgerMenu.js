@@ -1,6 +1,14 @@
 import "./BurgerMenu.scss";
 
 const BurgerMenu = ({ toggleSidebar, showBurgerMenu }) => {
+	const scrollToSection = (id) => {
+		const element = document.getElementById(id);
+		if (element) {
+			element.scrollIntoView({ behavior: "smooth" });
+		}
+		toggleSidebar();
+	};
+
 	return (
 		<div className={`burger ${showBurgerMenu ? "slideIn" : ""}`}>
 			<button className="burger-btn" onClick={() => toggleSidebar(false)}>
@@ -15,10 +23,10 @@ const BurgerMenu = ({ toggleSidebar, showBurgerMenu }) => {
 						<a>Home</a>
 					</div>
 					<div className="burger-item">
-						<a>About me</a>
+						<a onClick={() => scrollToSection("about")}>About me</a>
 					</div>
 					<div className="burger-item">
-						<a>Skills</a>
+						<a onClick={() => scrollToSection("skills")}>Skills</a>
 					</div>
 					<div className="burger-item">
 						<a>Portfolio</a>

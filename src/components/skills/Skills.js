@@ -6,7 +6,9 @@ const Skills = () => {
 	return (
 		<div className="skills" id="skills">
 			<div className="skills-container">
-				<h1 className="skills-title">Most often I use:</h1>
+				<div className="skills-title">
+					<h1>Most often I use:</h1>
+				</div>
 				<div className="skills-list">
 					{data.map((item) => (
 						<SkillItem item={item} />

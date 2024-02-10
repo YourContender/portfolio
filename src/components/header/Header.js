@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
 import logo from "../../img/logo.png";
-import "./Header.scss";
 import BurgerMenu from "../burger-menu/BurgerMenu";
+import "./Header.scss";
 
 const Header = () => {
 	const [showBurgerMenu, setShowBurgerMenu] = useState(false);
