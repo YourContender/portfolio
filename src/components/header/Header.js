@@ -2,9 +2,22 @@ import { useState } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
 import logo from "../../img/logo.png";
 import "./Header.scss";
+import BurgerMenu from "../burger-menu/BurgerMenu";
 
 const Header = () => {
-	const [burgerMenu, setBurgerMenu] = useState(false);
+	const [showBurgerMenu, setShowBurgerMenu] = useState(false);
+
+	const toggleSidebar = () => {
+		setShowBurgerMenu(!showBurgerMenu);
+		document.body.style.overflow = showBurgerMenu ? "auto" : "hidden";
+	};
+
+	const scrollToSection = (id) => {
+		const element = document.getElementById(id);
+		if (element) {
+			element.scrollIntoView({ behavior: "smooth" });
+		}
+	};
 
 	return (
 		<header className="header">
@@ -14,23 +27,29 @@ const Header = () => {
 				</div>
 				<div className="header-items">
 					<div className="header-item">
-						<span>Home</span>
+						<a>Home</a>
 					</div>
 					<div className="header-item">
-						<span>About me</span>
+						<a onClick={() => scrollToSection("about")}>About me</a>
 					</div>
 					<div className="header-item">
-						<span>Skills</span>
+						<a onClick={() => scrollToSection("skills")}>Skills</a>
 					</div>
 					<div className="header-item">
-						<span>Portfolio</span>
+						<a>Portfolio</a>
 					</div>
 					<div className="header-item">
-						<span>Contact</span>
+						<a>Contact</a>
 					</div>
 
 					<div className="header-burger">
-						<RxHamburgerMenu />
+						<RxHamburgerMenu onClick={() => toggleSidebar(true)} />
+						{showBurgerMenu && (
+							<BurgerMenu
+								showBurgerMenu={showBurgerMenu}
+								toggleSidebar={toggleSidebar}
+							/>
+						)}
 					</div>
 				</div>
 			</div>

@@ -20,13 +20,31 @@
     }
     &-item {
         color: #fff;
-        // padding: 10px 80px 10px 80px;
+        cursor: pointer;
+        a {
+            position: relative;
+            &::after {
+                position: absolute;
+                content: "";
+                border-bottom: 1px solid rgb(230, 219, 67);
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                transform: scaleX(0);
+                transform-origin: right;
+                transition: transform .6s;
+            }
+            &:hover {
+                &::after {
+                    transform: scaleX(1);
+                    transform-origin: left;
+                }   
+            }
+        }
         span {
             cursor: pointer;
             letter-spacing: 1px;
-            &:hover {
-                border-bottom: 1px solid rgb(230, 219, 67);
-            }
+            
         }
     }
     &-burger {
