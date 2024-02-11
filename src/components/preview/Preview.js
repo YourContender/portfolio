@@ -37,17 +37,35 @@ const Preview = () => {
 	return (
 		<motion.div className="preview" initial="hidden" whileInView="visible">
 			<div className="preview-container">
-				<motion.div
-					custom={2}
-					variants={textAnimation}
-					className="preview-left"
-				>
-					<span className="preview-left-text">Hello</span>
-					<h1 className="preview-left-name">I`m Sergey Sayenko</h1>
-					<span className="preview-left-descr">
+				<motion.div className="preview-left">
+					<motion.span
+						custom={1}
+						variants={textAnimation}
+						className="preview-left-text"
+					>
+						Hello
+					</motion.span>
+					<motion.h1
+						custom={2}
+						variants={textAnimation}
+						className="preview-left-name"
+					>
+						I`m Sergey Sayenko
+					</motion.h1>
+					<motion.span
+						custom={3}
+						variants={textAnimation}
+						className="preview-left-descr"
+					>
 						react frontend developer from Kryvyi Rih.
-					</span>
-					<button className="preview-left-btn">Contact me</button>
+					</motion.span>
+					<motion.button
+						custom={4}
+						variants={textAnimation}
+						className="preview-left-btn"
+					>
+						Contact me
+					</motion.button>
 				</motion.div>
 				<div className="preview-right">
 					<img src={me} alt="" className="preview-me" />
