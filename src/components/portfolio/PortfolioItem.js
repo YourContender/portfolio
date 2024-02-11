@@ -1,10 +1,9 @@
 import { motion } from "framer-motion";
-import prod1 from "../../img/app1.png";
 
 const PortfolioItem = ({ item }) => {
 	const cardAnimation = {
 		hidden: {
-			y: 100,
+			y: 70,
 			opacity: 0,
 		},
 		visible: (custom) => ({
@@ -28,13 +27,15 @@ const PortfolioItem = ({ item }) => {
 				<p className="portfolio-item-text-span">{item.descr}</p>
 
 				<div className="portfolio-item-text-links">
-					<a
-						className="portfolio-item-text-link"
-						href={item.website}
-						target="_blank"
-					>
-						Website
-					</a>
+					{item.website !== "#" && (
+						<a
+							className="portfolio-item-text-link"
+							href={item.website}
+							target="_blank"
+						>
+							Website
+						</a>
+					)}
 					<a
 						className="portfolio-item-text-link"
 						href={item.repo}

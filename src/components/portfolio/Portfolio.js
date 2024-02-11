@@ -5,7 +5,7 @@ import { cards } from "../../data";
 
 const Portfolio = () => {
 	return (
-		<div className="portfolio">
+		<div className="portfolio" id="portfolio">
 			<div className="portfolio-list">
 				{cards.map((item, index) => {
 					return <PortfolioItem item={item} key={index} />;

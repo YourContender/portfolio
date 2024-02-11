@@ -16,8 +16,6 @@ const BurgerMenu = ({ toggleSidebar, showBurgerMenu }) => {
 			</button>
 
 			<div className="burger-container">
-				<div className="burger-empty"></div>
-
 				<div className="burger-list">
 					<div className="burger-item">
 						<a>Home</a>

@@ -13,7 +13,7 @@ const photoAnimation = {
 	visible: (custom) => ({
 		y: 0,
 		opacity: 1,
-		transition: { delay: custom * 0.4 },
+		transition: { delay: custom * 0.2 },
 	}),
 };
 
@@ -25,7 +25,7 @@ const textAnimation = {
 	visible: (custom) => ({
 		y: 0,
 		opacity: 1,
-		transition: { delay: custom * 0.5 },
+		transition: { delay: custom * 0.3 },
 	}),
 };
 

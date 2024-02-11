@@ -20,7 +20,7 @@ const Header = () => {
 	};
 
 	return (
-		<header className="header">
+		<header className="header" id="header">
 			<div className="header-container">
 				<div className="header-logo">
 					<img src={logo} alt="logo" />
@@ -36,7 +36,7 @@ const Header = () => {
 						<a onClick={() => scrollToSection("skills")}>Skills</a>
 					</div>
 					<div className="header-item">
-						<a>Portfolio</a>
+						<a onClick={() => scrollToSection("portfolio")}>Portfolio</a>
 					</div>
 					<div className="header-item">
 						<a>Contact</a>

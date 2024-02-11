@@ -1,4 +1,5 @@
 import About from "./components/about/About";
+import Footer from "./components/footer/Footer";
 import Header from "./components/header/Header";
 import Portfolio from "./components/portfolio/Portfolio";
 import Preview from "./components/preview/Preview";
@@ -12,6 +13,7 @@ const App = () => {
 			<Skills />
 			<About />
 			<Portfolio />
+			<Footer />
 		</div>
 	);
 };
