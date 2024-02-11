@@ -84,4 +84,12 @@ export const cards = [
 		website: "https://subaru-animation-app.vercel.app/",
 		repo: "https://github.com/YourContender/subaru-animation-app",
 	},
+	{
+		img: "https://github.com/YourContender/portfolio/blob/main/src/img/app1.png?raw=true",
+		h2: "Todo-list",
+		descr:
+			"Using typescript and json.server. Install the project for yourself and run it with 'npm run dev'",
+		website: "#",
+		repo: "https://github.com/YourContender/ts-todolist",
+	},
 ];
