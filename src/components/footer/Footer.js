@@ -30,9 +30,6 @@ const Footer = () => {
 					<div className="footer-nav-item">
 						<a onClick={() => scrollToSection("portfolio")}>Portfolio</a>
 					</div>
-					<div className="footer-nav-item">
-						<a>Contact</a>
-					</div>
 				</div>
 				<div className="footer-contacts">
 					<span className="footer-contacts-elem">

@@ -38,9 +38,6 @@ const Header = () => {
 					<div className="header-item">
 						<a onClick={() => scrollToSection("portfolio")}>Portfolio</a>
 					</div>
-					<div className="header-item">
-						<a>Contact</a>
-					</div>
 
 					<div className="header-burger">
 						<RxHamburgerMenu onClick={() => toggleSidebar(true)} />

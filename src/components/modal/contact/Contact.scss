@@ -1,0 +1,123 @@
+.contact {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    backdrop-filter: blur(12px);
+    top: 0;
+    left: 0;
+    z-index: 99;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &-container {
+        width: 768px;
+        background-color: #292828;
+        padding: 25px 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 15px #E2A200;
+    }
+    &-up {
+        position: relative;
+        height: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-transform: uppercase;
+        padding-bottom: 20px;
+        h2 {
+            border-bottom: 1px solid #E2A200;
+            padding: 0 20px;
+        }
+    }
+    &-info {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &-img {
+        margin-right: 40px;
+        img {
+            width: 270px;
+            border-radius: 15px
+        }
+    }
+    &-btn {
+        position: absolute;
+        top: -15px;
+        right: 5px;
+        font-size: 52px;
+        background: none;
+        border: none;
+        outline: none;
+        color: red;
+        cursor: pointer;
+    }
+    &-elem {
+        display: flex;
+        font-family: 'Rajdhani', sans-serif;
+        font-size: auto;
+        padding: 10px 0;
+        &-value {
+            margin-left: 20px;
+            &:hover {
+                color: #E2A200;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+@media (max-width: 992px)  {
+    .contact {
+        &-container {
+            width: 710px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .contact {
+        &-container {
+            width: 515px;
+        }
+        &-img {
+            margin-right: 20px;
+            img {
+                width: 205px;
+            }
+        }
+        &-elem {
+            font-size: 18px;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .contact {
+        &-container {
+            width: 80%;
+        }
+        &-info {
+            flex-direction: column;
+        }
+        &-img {
+            margin-right: 0;
+            img {
+                width: 195px;
+            }
+        }
+        &-elem {
+            font-size: 16px;
+        }
+        &-up {
+            font-size: 20px;
+            height: 60px;
+            margin-bottom: 0;
+        }
+        &-btn {
+            top: -30px;
+            right: -10px;
+            font-size: 45px;
+        }
+    }
+}

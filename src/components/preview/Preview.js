@@ -8,8 +8,17 @@ import ts from "../../img/preview/typescript-svgrepo-com.svg";
 import git from "../../img/preview/github-color-svgrepo-com.svg";
 import { motion } from "framer-motion";
 import "./Preview.scss";
+import { useState } from "react";
+import Contact from "../modal/contact/Contact";
 
 const Preview = () => {
+	const [showModal, setShowModal] = useState(false);
+
+	const toggleModalWindow = () => {
+		setShowModal(!showModal);
+		document.body.style.overflow = showModal ? "auto" : "hidden";
+	};
+
 	const textAnimation = {
 		hidden: {
 			x: -300,
@@ -63,9 +72,17 @@ const Preview = () => {
 						custom={4}
 						variants={textAnimation}
 						className="preview-left-btn"
+						onClick={() => toggleModalWindow(!showModal)}
 					>
 						Contact me
 					</motion.button>
+
+					{showModal ? (
+						<Contact
+							showModal={showModal}
+							toggleModalWindow={toggleModalWindow}
+						/>
+					) : null}
 				</motion.div>
 				<div className="preview-right">
 					<img src={me} alt="" className="preview-me" />
