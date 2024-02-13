@@ -41,20 +41,17 @@
     }
     &-contacts {
         display: flex;
-        flex-direction: column;
         justify-content: center;
-        margin-left: 40px;
         &-elem {
+            margin: 20px;
+            font-size: 25px;
             display: flex;
-            margin: 10px 0;
-            position: relative;
-            &-value {
-                padding-left: 10px;
-                &:hover {
-                    color: #E2A200;
-                    cursor: pointer;
-                }
+            transition: .2s ease-in-out;
+            &:hover {
+                color: #E2A200;
+                cursor: pointer;
             }
+        
         }
     }
     &-other {

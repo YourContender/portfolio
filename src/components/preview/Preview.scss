@@ -65,6 +65,10 @@
         background-color: #383737;
         border-radius: 100%;
         padding: 7px;
+        transition: .2s ease-in;
+        &:hover {
+            box-shadow: 0 2px 15px #2aa8fc;
+        }
         img {
             width: 100%;
         }

@@ -123,3 +123,26 @@
         }
     }
 }
+
+
+@media (max-width: 576px) {
+    .skills {
+        img {
+            width: 85px;
+        }
+        &-wrapper {
+            width: 125px;
+            height: 180px;
+            &-name {
+                font-size: 24px;
+            }
+            &:hover .skills-wrapper-front {
+                transform: none;
+            }
+            &:hover .skills-wrapper-back {
+                transform: none;
+                display: none;
+            }
+        }
+    }
+}

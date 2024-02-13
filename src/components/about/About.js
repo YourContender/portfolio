@@ -19,13 +19,13 @@ const photoAnimation = {
 
 const textAnimation = {
 	hidden: {
-		y: -500,
+		y: -100,
 		opacity: 0,
 	},
 	visible: (custom) => ({
 		y: 0,
 		opacity: 1,
-		transition: { delay: custom * 0.3 },
+		transition: { delay: custom * 0.2 },
 	}),
 };
 
@@ -72,14 +72,20 @@ const About = () => {
 					>
 						<h2 className="about-block-middle-h2">About me</h2>
 						<span className="about-block-middle-span">
-							Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem
-							iure illum eum illo velit, optio animi veniam corrupti perferendis
-							impedit sunt ab ullam. Amet ad enim cumque nulla, numquam nihil
-							beatae eum quia mollitia dolor eveniet, magnam ea expedita soluta.
-							Velit eius debitis ratione voluptatem mollitia iusto recusandae
-							delectus laudantium quaerat vitae tempore rem non nisi veritatis
-							porro commodi eaque fugiat exercitationem repudiandae enim,
-							voluptatum, possimus, dicta quas? Ipsum, nam!
+							Hello again. I am a front-end developer from the beautiful city of
+							Kryvyi Rih, my journey began three years ago, as soon as I brought
+							the first "Hello World" to the console. Step by step, I learned
+							new things, watched various tutorials, read literature, asked
+							double-witted friends about things that were not clear. Then there
+							were courses, a very large number, I looked at how other
+							developers think and work, analyzed them and tried to become like
+							that. Then there was an internship at the "Onyx" company, where we
+							spent 5 months, the result of which was an interview with the
+							possibility of getting a job. I successfully passed the internship
+							and the interview, but I could not move to another city because of
+							the war, so I had to refuse. A "trainee base" appeared on the
+							horizon, where I could further improve my skills, because real
+							projects were being developed in the team.
 						</span>
 					</motion.div>
 					<div className="about-block-right">

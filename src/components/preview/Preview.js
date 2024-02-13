@@ -87,7 +87,7 @@ const Preview = () => {
 				<div className="preview-right">
 					<img src={me} alt="" className="preview-me" />
 					<motion.div
-						custom={1}
+						custom={3}
 						variants={skillsAnimation}
 						className="preview-skills react"
 					>
@@ -101,14 +101,14 @@ const Preview = () => {
 						<img src={redux} alt="react" />
 					</motion.div>
 					<motion.div
-						custom={3}
+						custom={4}
 						variants={skillsAnimation}
 						className="preview-skills sass"
 					>
 						<img src={sass} alt="react" />
 					</motion.div>
 					<motion.div
-						custom={4}
+						custom={1}
 						variants={skillsAnimation}
 						className="preview-skills js"
 					>

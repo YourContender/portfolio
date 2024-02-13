@@ -19,9 +19,6 @@ const Footer = () => {
 			<div className="footer-container">
 				<div className="footer-nav">
 					<div className="footer-nav-item">
-						<a>Home</a>
-					</div>
-					<div className="footer-nav-item">
 						<a onClick={() => scrollToSection("about")}>About me</a>
 					</div>
 					<div className="footer-nav-item">
@@ -34,25 +31,18 @@ const Footer = () => {
 				<div className="footer-contacts">
 					<span className="footer-contacts-elem">
 						<TfiEmail />
-						<p className="footer-contacts-elem-value">
-							sayenkosergey12345@gmail.com
-						</p>
 					</span>
 					<span className="footer-contacts-elem">
 						<FaInstagram />
-						<p className="footer-contacts-elem-value">your_contender</p>
 					</span>
 					<span className="footer-contacts-elem">
 						<FaTelegramPlane />
-						<p className="footer-contacts-elem-value">@your_contender</p>
 					</span>
 					<span className="footer-contacts-elem">
 						<BsFillTelephoneInboundFill />
-						<p className="footer-contacts-elem-value">068-945-01-66</p>
 					</span>
 					<span className="footer-contacts-elem">
 						<FaGithub />
-						<p className="footer-contacts-elem-value">YourContender</p>
 					</span>
 				</div>
 				<div className="footer-other">

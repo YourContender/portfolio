@@ -69,11 +69,15 @@
             }
             &-links {
                 display: flex;
+                justify-content: space-between;
+                align-items: center;
+                height: 70px;
             }
             &-link {
                 color: #E2A200;
                 display: block;
                 font-size: 22px;
+                width: 110px;
                 margin: 20px 20px 20px 20px;
                 text-decoration: none;
                 letter-spacing: 1px;
