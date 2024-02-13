@@ -29,21 +29,41 @@ const Footer = () => {
 					</div>
 				</div>
 				<div className="footer-contacts">
-					<span className="footer-contacts-elem">
+					<a
+						href="mailto:sayenkosergey12345@gmail.com"
+						className="footer-contacts-elem"
+						target="_blank"
+					>
 						<TfiEmail />
-					</span>
-					<span className="footer-contacts-elem">
+					</a>
+					<a
+						href="https://www.instagram.com/your_contender/"
+						className="footer-contacts-elem"
+						target="_blank"
+					>
 						<FaInstagram />
-					</span>
-					<span className="footer-contacts-elem">
+					</a>
+					<a
+						href="https://t.me/your_contender"
+						className="footer-contacts-elem"
+						target="_blank"
+					>
 						<FaTelegramPlane />
-					</span>
-					<span className="footer-contacts-elem">
+					</a>
+					<a
+						className="footer-contacts-elem"
+						href="tel:0689123155"
+						target="_blank"
+					>
 						<BsFillTelephoneInboundFill />
-					</span>
-					<span className="footer-contacts-elem">
+					</a>
+					<a
+						className="footer-contacts-elem"
+						href="https://github.com/YourContender"
+						target="_blank"
+					>
 						<FaGithub />
-					</span>
+					</a>
 				</div>
 				<div className="footer-other">
 					<button

@@ -21,13 +21,13 @@ const Preview = () => {
 
 	const textAnimation = {
 		hidden: {
-			x: -300,
+			x: -50,
 			opacity: 0,
 		},
 		visible: (custom) => ({
 			x: 0,
 			opacity: 1,
-			transition: { delay: custom * 0.2 },
+			transition: { delay: custom * 0.1 },
 		}),
 	};
 
@@ -48,28 +48,28 @@ const Preview = () => {
 			<div className="preview-container">
 				<motion.div className="preview-left">
 					<motion.span
-						custom={1}
+						custom={2}
 						variants={textAnimation}
 						className="preview-left-text"
 					>
 						Hello
 					</motion.span>
 					<motion.h1
-						custom={2}
+						custom={3}
 						variants={textAnimation}
 						className="preview-left-name"
 					>
 						I`m Sergey Sayenko
 					</motion.h1>
 					<motion.span
-						custom={3}
+						custom={4}
 						variants={textAnimation}
 						className="preview-left-descr"
 					>
 						react frontend developer from Kryvyi Rih.
 					</motion.span>
 					<motion.button
-						custom={4}
+						custom={1}
 						variants={textAnimation}
 						className="preview-left-btn"
 						onClick={() => toggleModalWindow(!showModal)}

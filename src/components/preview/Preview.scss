@@ -56,6 +56,13 @@
             border: none;
             outline: none;
             box-shadow: 0 2px 15px #E2A200;
+            cursor: pointer;
+            transition: .5s ease-in-out;
+            &:hover {
+                background: #68c8ff38;
+                color: #fff;
+                box-shadow: 0 2px 15px #68c8ff;
+            }
         }
     }
     &-skills {

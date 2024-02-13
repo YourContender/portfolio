@@ -70,7 +70,11 @@ const Contact = ({ showModal, toggleModalWindow }) => {
 					</motion.div>
 
 					<div className="contact-public">
-						<span className="contact-elem">
+						<a
+							className="contact-elem"
+							href="mailto:sayenkosergey12345@gmail.com"
+							target="_blank"
+						>
 							<TfiEmail />
 							<motion.p
 								custom={1}
@@ -79,8 +83,12 @@ const Contact = ({ showModal, toggleModalWindow }) => {
 							>
 								sayenkosergey12345@gmail.com
 							</motion.p>
-						</span>
-						<span className="contact-elem">
+						</a>
+						<a
+							className="contact-elem"
+							href="https://www.instagram.com/your_contender/"
+							target="_blank"
+						>
 							<FaInstagram />
 							<motion.p
 								custom={2}
@@ -89,8 +97,12 @@ const Contact = ({ showModal, toggleModalWindow }) => {
 							>
 								your_contender
 							</motion.p>
-						</span>
-						<span className="contact-elem">
+						</a>
+						<a
+							className="contact-elem"
+							href="https://t.me/your_contender"
+							target="_blank"
+						>
 							<FaTelegramPlane />
 							<motion.p
 								custom={3}
@@ -99,8 +111,8 @@ const Contact = ({ showModal, toggleModalWindow }) => {
 							>
 								@your_contender
 							</motion.p>
-						</span>
-						<span className="contact-elem">
+						</a>
+						<a className="contact-elem" href="tel:0689123155" target="_blank">
 							<BsFillTelephoneInboundFill />
 							<motion.p
 								custom={4}
@@ -109,8 +121,12 @@ const Contact = ({ showModal, toggleModalWindow }) => {
 							>
 								068-945-01-66
 							</motion.p>
-						</span>
-						<span className="contact-elem">
+						</a>
+						<a
+							className="contact-elem"
+							href="https://github.com/YourContender"
+							target="_blank"
+						>
 							<FaGithub />
 							<motion.p
 								custom={5}
@@ -119,7 +135,7 @@ const Contact = ({ showModal, toggleModalWindow }) => {
 							>
 								YourContender
 							</motion.p>
-						</span>
+						</a>
 					</div>
 				</div>
 			</motion.div>

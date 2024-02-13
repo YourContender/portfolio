@@ -10,11 +10,7 @@ const SkillItem = ({ item }) => {
 					<span className="skills-wrapper-name">{item.name}</span>
 				</div>
 				<div className="skills-wrapper-back">
-					<p className="skills-wrapper-descr">
-						React is a JavaScript library for building interactive user
-						interfaces and web applications quickly and efficiently with
-						significantly less code than you would with vanilla JavaScript.
-					</p>
+					<p className="skills-wrapper-descr">{item.descr}</p>
 				</div>
 			</div>
 		</div>

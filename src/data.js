@@ -54,7 +54,7 @@ export const data = [
 		name: "Sass",
 		class: "sass",
 		descr:
-			"Material-UI is an open-source user interface framework for React.js, a popular JavaScript library for building user interfaces.",
+			"a CSS-based metalanguage designed to increase the level of abstraction of CSS code and simplify cascading style sheet files. Included in the Haml markup language",
 		img: "https://raw.githubusercontent.com/YourContender/portfolio/b66548bcd26f2f4f79047bc71c5cad07e7ff5d21/src/img/preview/sass-svgrepo-com.svg",
 	},
 ];

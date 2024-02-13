@@ -15,7 +15,7 @@ const Skills = () => {
 					))}
 				</div>
 
-				<button className="skills-btn">Full list</button>
+				{/* <button className="skills-btn">Full list</button> */}
 			</div>
 		</div>
 	);
