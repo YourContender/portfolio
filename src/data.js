@@ -92,4 +92,12 @@ export const cards = [
 		website: "#",
 		repo: "https://github.com/YourContender/ts-todolist",
 	},
+	{
+		img: "https://github.com/YourContender/portfolio/blob/main/src/img/ragnarok.png?raw=true",
+		h2: "Ragnarok",
+		descr:
+			"simple project dedicated to the game, with the possibility to buy the game on PC or PlayStation.",
+		website: "https://ragnarok-lime.vercel.app/",
+		repo: "https://github.com/YourContender/ragnarok",
+	},
 ];
