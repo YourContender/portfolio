@@ -35,6 +35,18 @@
             height: 250px;
             border-radius: 10px;
         }
+        &-use {
+            margin-top: 5px;
+            span {
+                border: 1px solid rgb(48, 48, 112);
+                background-color: rgba(70, 70, 141, 0.836);
+                border-radius: 8px;
+                padding: 1px 4px;
+                font-weight: 700;
+                color: #E2A200;
+                margin: 0 2px;
+            }
+        }
         &-text {
             width: 500px;
             height: 230px;
@@ -52,6 +64,7 @@
                 padding: 10px 40px;
                 border-bottom: 1px solid #E2A200;
                 letter-spacing: 1px;
+                min-height: 60px;
             }
             &-span {
                 height: 84px;
@@ -64,6 +77,7 @@
                 overflow: hidden;
                 text-overflow: ellipsis; 
                 display: -webkit-box;
+                min-height: 70px;
                 -webkit-box-orient: vertical;
                 -webkit-line-clamp: 4;
             }

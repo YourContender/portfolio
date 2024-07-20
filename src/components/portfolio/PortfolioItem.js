@@ -23,8 +23,18 @@ const PortfolioItem = ({ item }) => {
 		>
 			<img src={item.img} alt="" />
 			<div className="portfolio-item-text">
-				<h2 className="portfolio-item-text-h">{item.h2}</h2>
-				<p className="portfolio-item-text-span">{item.descr}</p>
+				<div>
+					<h2 className="portfolio-item-text-h">{item.h2}</h2>
+				</div>
+				<div>
+					<p className="portfolio-item-text-span">{item.descr}</p>
+				</div>
+
+				<div className="portfolio-item-use">
+					{item.tech.map((elem) => {
+						return <span>{elem}</span>;
+					})}
+				</div>
 
 				<div className="portfolio-item-text-links">
 					{item.website !== "#" && (

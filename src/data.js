@@ -67,6 +67,7 @@ export const cards = [
 			"multi-page car rental website, implemented using JavaScript, HTML, CSS, To create the slider I used the library 'swiper'",
 		website: "https://lease-cars-prod.vercel.app/index.html",
 		repo: "https://github.com/YourContender/lease-cars",
+		tech: ["layout"],
 	},
 	{
 		img: "https://github.com/YourContender/portfolio/blob/main/src/img/miami.png?raw=true",
@@ -75,6 +76,7 @@ export const cards = [
 			"beautiful design, parallax effect, well-chosen colors, added basic animation",
 		website: "https://miami-app.vercel.app/",
 		repo: "https://github.com/YourContender/miami-layout",
+		tech: ["layout", "swiper"],
 	},
 	{
 		img: "https://github.com/YourContender/portfolio/blob/main/src/img/app1.png?raw=true",
@@ -83,6 +85,7 @@ export const cards = [
 			"First use of the gsap library. I tested its free capabilities and connection methods.",
 		website: "https://subaru-animation-app.vercel.app/",
 		repo: "https://github.com/YourContender/subaru-animation-app",
+		tech: ["layout", "gsap"],
 	},
 	{
 		img: "https://github.com/YourContender/portfolio/blob/main/src/img/todo-ts.png?raw=true",
@@ -91,6 +94,7 @@ export const cards = [
 			"Using typescript and json.server. Install the project for yourself and run it with 'npm run dev'",
 		website: "#",
 		repo: "https://github.com/YourContender/ts-todolist",
+		tech: ["react", "sass", "typescript", "formik"],
 	},
 	{
 		img: "https://github.com/YourContender/portfolio/blob/main/src/img/ragnarok.png?raw=true",
@@ -99,11 +103,14 @@ export const cards = [
 			"simple project dedicated to the game, with the possibility to buy the game on PC or PlayStation.",
 		website: "https://ragnarok-lime.vercel.app/",
 		repo: "https://github.com/YourContender/ragnarok",
+		tech: ["react", "sass", "i18next", "typescript"],
 	},
 	{
-		img: "https://github.com/YourContender/portfolio/blob/main/src/img/ragnarok.png?raw=true",
+		img: "https://github.com/YourContender/portfolio/blob/main/src/img/crypto.png?raw=true",
 		h2: "Crypto-App",
 		descr: "crypto application, using Ant Design, node.js.",
+		website: "#",
 		repo: "https://github.com/YourContender/crypto-app",
+		tech: ["react", "antd", "express", "node.js"],
 	},
 ];
