@@ -100,4 +100,10 @@ export const cards = [
 		website: "https://ragnarok-lime.vercel.app/",
 		repo: "https://github.com/YourContender/ragnarok",
 	},
+	{
+		img: "https://github.com/YourContender/portfolio/blob/main/src/img/ragnarok.png?raw=true",
+		h2: "Crypto-App",
+		descr: "crypto application, using Ant Design, node.js.",
+		repo: "https://github.com/YourContender/crypto-app",
+	},
 ];
