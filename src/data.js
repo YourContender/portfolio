@@ -65,7 +65,8 @@ export const cards = [
 		h2: "Lease cars",
 		descr:
 			"multi-page car rental website, implemented using JavaScript, HTML, CSS, To create the slider I used the library 'swiper'",
-		website: "https://lease-cars-prod.vercel.app/index.html",
+		website: "#",
+		// website: "https://lease-cars-prod.vercel.app/index.html",
 		repo: "https://github.com/YourContender/lease-cars",
 		tech: ["layout"],
 	},
@@ -74,7 +75,8 @@ export const cards = [
 		h2: "Miami slider",
 		descr:
 			"beautiful design, parallax effect, well-chosen colors, added basic animation",
-		website: "https://miami-app.vercel.app/",
+		// website: "https://miami-app.vercel.app/",
+		website: "#",
 		repo: "https://github.com/YourContender/miami-layout",
 		tech: ["layout", "swiper"],
 	},
@@ -83,7 +85,8 @@ export const cards = [
 		h2: "Subaru",
 		descr:
 			"First use of the gsap library. I tested its free capabilities and connection methods.",
-		website: "https://subaru-animation-app.vercel.app/",
+		website: "#",
+		// website: "https://subaru-animation-app.vercel.app/",
 		repo: "https://github.com/YourContender/subaru-animation-app",
 		tech: ["layout", "gsap"],
 	},
@@ -101,7 +104,8 @@ export const cards = [
 		h2: "Ragnarok",
 		descr:
 			"simple project dedicated to the game, with the possibility to buy the game on PC or PlayStation.",
-		website: "https://ragnarok-lime.vercel.app/",
+		website: "#",
+		// website: "https://ragnarok-lime.vercel.app/",
 		repo: "https://github.com/YourContender/ragnarok",
 		tech: ["react", "sass", "i18next", "typescript"],
 	},
